@@ -85,7 +85,9 @@ An example of collecting clipped gradients with Gaussian noise:
 python src/collect_grads.py --ds=cifar10 --model=fc3 --act=relu --h_dim=512 --defense=dp --C=1.0 --sigma=0.0046 --n_batch=5
 ```
 
-Use the same `--defense=dp --C=1 --sigma=0.0046` when attacking. At batch size 32, this noise multiplier corresponds to approximately 0 dB SNR for the FC-3 configuration evaluated in Table 6. The achieved SNR depends on the model and data.
+Use the same `--defense=dp --C=1 --sigma=0.0046` when attacking. At batch size 32, this noise multiplier corresponds to approximately 0 dB SNR for the FC-3 configuration evaluated in Table 6. The achieved SNR depends on the model and data. 
+
+For the noisy VGG-16 experiments, we set batch_size_list = [32] in src/collect_grads.py before collecting gradients. This limits collection to the batch size used in those experiments and avoids the memory cost of collecting gradients at the other batch sizes. Use --batch_size=32 when running the attack.
 
 ## Reconstructions and contrast stretching
 
