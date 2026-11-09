@@ -181,7 +181,7 @@ def get_dataloaders(
     load_train: bool = True,
     shuffle_train=True,
     shuffle_test=False,
-    num_workers=0,
+    num_workers=2,
 ):
     """Returns train and test loaders.
 
