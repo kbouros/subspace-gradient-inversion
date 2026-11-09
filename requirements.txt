@@ -1,0 +1,11 @@
+torch
+submitit
+numpy
+scipy
+tqdm
+torchvision
+matplotlib
+wandb
+pandas
+opacus
+torchmetrics
