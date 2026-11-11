@@ -1,6 +1,6 @@
 # Gradient Inversion through Linear and Affine Subspace Constraints
 
-Implementation accompanying **Gradient Inversion through Linear and Affine Subspace Constraints**, a manuscript being prepared for submission to arXiv.
+Implementation accompanying the preprint [**Gradient Inversion through Linear and Affine Subspace Constraints**](https://arxiv.org/abs/2611.13976).
 
 This project studies image-domain gradient inversion using the linear and affine structure of fully connected (FC) layer gradients. It combines cosine gradient matching with soft subspace penalties or a hard subspace parameterization, optionally using constraints from multiple FC layers. It also includes the Cocktail Party Attack (CPA) baseline and a two-stage embedding/feature inversion pipeline for VGG-16.
 
